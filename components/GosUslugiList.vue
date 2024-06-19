@@ -6,7 +6,9 @@
       </div>
       <div class="service-description">
         <p class="title">Справки</p>
-        <p class="description">Адресная справка, сведения о начислении зарплаты и др.</p>
+        <p class="description">
+          Адресная справка, сведения о начислении зарплаты и др.
+        </p>
       </div>
       <div class="arrow-icon">
         <img src="@/assets/icons/icon-arrow-blue.svg" alt="" />
@@ -18,7 +20,9 @@
       </div>
       <div class="service-description">
         <p class="title">Налоги</p>
-        <p class="description">На транспорт и имущество для физлиц по реквизитам</p>
+        <p class="description">
+          На транспорт и имущество для физлиц по реквизитам
+        </p>
       </div>
       <div class="arrow-icon">
         <img src="@/assets/icons/icon-arrow-blue.svg" alt="" />
@@ -30,7 +34,9 @@
       </div>
       <div class="service-description">
         <p class="title">Транспорт</p>
-        <p class="description">Проверка страхового полиса, информация об автомобиле и др.</p>
+        <p class="description">
+          Проверка страхового полиса, информация об автомобиле и др.
+        </p>
       </div>
       <div class="arrow-icon">
         <img src="@/assets/icons/icon-arrow-blue.svg" alt="" />
@@ -55,7 +61,8 @@
       <div class="service-description">
         <p class="title">БПИ (Бюро принудительного исполниния)</p>
         <p class="description">
-          Данный сервис позволяет отслеживать задолженности по исполнительным документам.
+          Данный сервис позволяет отслеживать задолженности по исполнительным
+          документам.
         </p>
       </div>
       <div class="arrow-icon">
@@ -68,7 +75,9 @@
       </div>
       <div class="service-description">
         <p class="title">Справки</p>
-        <p class="description">Адресная справка, сведения о начислении зарплаты и др.</p>
+        <p class="description">
+          Адресная справка, сведения о начислении зарплаты и др.
+        </p>
       </div>
       <div class="arrow-icon">
         <img src="@/assets/icons/icon-arrow-blue.svg" alt="" />
@@ -78,7 +87,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/global';
+@import "@/assets/styles/global";
 
 .service-items-container {
   padding: 15px 20px 0px;
@@ -102,7 +111,7 @@
     & .service-description {
       & .title {
         color: $text-night-primary;
-        font-family: 'Golos Text', sans-serif;
+        font-family: "Golos Text", sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: 600;
@@ -111,7 +120,7 @@
       & .description {
         margin-top: 2px;
         color: $gray-light;
-        font-family: 'Golos Text', sans-serif;
+        font-family: "Golos Text", sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;

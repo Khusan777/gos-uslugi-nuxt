@@ -33,14 +33,9 @@
 
 <template>
   <section class="popular-services">
-    <p class="title">Популярные услуги</p>
     <div class="services">
       <div v-for="i in 8" :key="i" class="service">
-        <div v-if="i === 8" class="service-item">
-          <img src="@/assets/icons/popular-services/more-Icon.svg" alt="" />
-          <p class="service-text">Все услуги</p>
-        </div>
-        <div v-else class="service-item">
+        <div class="service-item">
           <img src="@/assets/icons/popular-services/bank.svg" alt="" />
           <p class="service-text">Определение ИНН</p>
         </div>
@@ -50,7 +45,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/global';
+@import "@/assets/styles/global";
 
 .popular-services {
   margin-top: 15px;
@@ -58,7 +53,7 @@
   & p.title {
     padding: 10px 180px 16px 20px;
     color: $gray-light;
-    font-family: 'Golos Text', sans-serif;
+    font-family: "Golos Text", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -82,14 +77,15 @@
       display: flex;
       align-items: flex-start;
       padding: 7px;
-      border-radius: 100px;
+      border: 1px solid #4b4b59;
+      border-radius: 12px;
       background-color: rgba(87, 89, 101, 0.35);
     }
     & p.service-text {
       flex: 1 0 0;
       color: $text-night-primary;
       text-align: center;
-      font-family: 'Golos Text', sans-serif;
+      font-family: "Golos Text", sans-serif;
       font-size: 10px;
       font-style: normal;
       font-weight: 400;

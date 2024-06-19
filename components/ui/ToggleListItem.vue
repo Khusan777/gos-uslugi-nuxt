@@ -2,16 +2,16 @@
 defineProps({
   item: {
     type: Object,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const isActive = ref(false)
-const toggle = () => (isActive.value = !isActive.value)
+const isActive = ref(false);
+const toggle = () => (isActive.value = !isActive.value);
 </script>
 
 <template>
-  <div @click="toggle" class="dropdown_list">
+  <div class="dropdown_list" @click="toggle">
     <div>
       <p class="text">
         {{ item.text }}
@@ -28,11 +28,11 @@ const toggle = () => (isActive.value = !isActive.value)
       {{ item.desc }}
     </p>
   </div>
-  <div class="border_arrow"></div>
+  <div class="border_arrow" />
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/global';
+@import "@/assets/styles/global";
 
 .dropdown_list {
   & div {
@@ -47,7 +47,7 @@ const toggle = () => (isActive.value = !isActive.value)
 .text {
   width: calc(100% - 39px);
   color: $text-night-primary;
-  font-family: 'Golos Text', sans-serif;
+  font-family: "Golos Text", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -59,7 +59,7 @@ const toggle = () => (isActive.value = !isActive.value)
 .description {
   padding: 10px 20px;
   color: $gray-light;
-  font-family: 'Golos Text', sans-serif;
+  font-family: "Golos Text", sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;

@@ -1,39 +1,45 @@
 <script setup>
-const router = useRouter()
+const router = useRouter();
 const iconArrowClicked = () => {
-  router.go(-1)
-}
+  router.go(-1);
+};
 
 defineProps({
   title: {
     type: String,
-    default: 'Госуслуги'
+    default: "Госуслуги",
   },
   left: {
-    type: Boolean
+    type: Boolean,
   },
   right: {
-    type: Boolean
+    type: Boolean,
   },
   isBackground: {
-    type: Boolean
-  }
-})
+    type: Boolean,
+  },
+});
 </script>
 
 <template>
   <header>
     <div :class="{ isBackground: isBackground }" class="header-items">
-      <img style="width: 25px" v-if="left" @click="iconArrowClicked" src="@/assets/icons/icon-arrow.svg" alt="" />
-      <div v-else class="header-left"></div>
+      <img
+        v-if="left"
+        style="width: 25px"
+        src="@/assets/icons/icon-arrow.svg"
+        alt=""
+        @click="iconArrowClicked"
+      />
+      <div v-else class="header-left" />
       <p v-if="title" class="header-text">{{ title }}</p>
-      <div class="header-right"></div>
+      <div class="header-right" />
     </div>
   </header>
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/global';
+@import "@/assets/styles/global";
 
 header {
   max-height: 50px;
@@ -47,7 +53,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     & .header-text {
-      font-family: 'Golos Text', sans-serif;
+      font-family: "Golos Text", sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 700;

@@ -9,12 +9,22 @@
     "preview": "nuxt preview",
     "analyze": "npx nuxi analyze",
     "project-info": "npx nuxi info",
+    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier . --check",
+    "lintfix": "eslint . --fix && prettier --write --list-different .",
     "project-hard-reset": "rm -rf node_modules yarn.lock && yarn cache clean && yarn && yarn dev"
   },
   "devDependencies": {
+    "@nuxt/eslint": "^0.3.13",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
     "nuxt": "^3.11.2",
+    "prettier": "^3.3.2",
     "sass": "^1.77.3",
-    "sass-loader": "^14.2.1"
+    "sass-loader": "^14.2.1",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",

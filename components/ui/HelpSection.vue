@@ -1,17 +1,22 @@
 <template>
   <section class="help">
-    <p class="help_text">Помощь</p>
+    <p class="help_text">Популярные</p>
     <p class="all_text">
-      Смотреть всё <img class="icon_arrow" src="@/assets/icons/icon-arrow-small.svg" alt="" />
+      Все услуги
+      <img
+        class="icon_arrow"
+        src="@/assets/icons/icon-arrow-small.svg"
+        alt=""
+      />
     </p>
   </section>
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/global';
+@import "@/assets/styles/global";
 
 .help {
-  font-family: 'Golos Text', sans-serif;
+  font-family: "Golos Text", sans-serif;
   padding: 20px 20px 8px 20px;
   display: flex;
   align-items: center;
@@ -21,21 +26,21 @@
     text-align: center;
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
+    font-weight: 600;
   }
   & .all_text {
-    color: $text-night-primary;
-    font-family: 'Golos Text', sans-serif;
-    font-size: 10px;
+    color: #0073ff;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     align-self: center;
     line-height: normal;
   }
   & .icon_arrow {
+    color: #0073ff;
     vertical-align: middle;
-    margin-left: 8px;
+    margin-left: 4px;
   }
 }
 .help p {

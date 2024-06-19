@@ -16,7 +16,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/global';
+@import "@/assets/styles/global";
 
 .footer-container {
   display: flex;
@@ -34,7 +34,7 @@
   & p.title {
     color: $gray;
     text-align: center;
-    font-family: 'Golos Text', sans-serif;
+    font-family: "Golos Text", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;

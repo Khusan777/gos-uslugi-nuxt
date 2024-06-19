@@ -10,11 +10,19 @@
       </div>
       <div class="panel-service-2">
         <p class="title">Справки</p>
-        <img class="img-service" src="@/assets/img/InsuranceContract.svg" alt="" />
+        <img
+          class="img-service"
+          src="@/assets/img/InsuranceContract.svg"
+          alt=""
+        />
       </div>
       <div class="panel-service-3">
         <p class="title">Налоги</p>
-        <img class="img-service" src="@/assets/img/InsuranceCalculation.svg" alt="" />
+        <img
+          class="img-service"
+          src="@/assets/img/InsuranceCalculation.svg"
+          alt=""
+        />
       </div>
       <div class="panel-service-4">
         <p class="title">Все услуги</p>
@@ -25,15 +33,18 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/global';
+@import "@/assets/styles/global";
 
 .gos-uslugi-card {
+  margin-top: 20px;
+  border-radius: 20px 20px 0 0;
+  background: #19191e;
   & .gos-uslugi {
     display: flex;
     padding: 20px 20px 9px;
     & .title {
       color: $gray-light;
-      font-family: 'Golos Text', sans-serif;
+      font-family: "Golos Text", sans-serif;
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
@@ -49,7 +60,7 @@
   grid-gap: 10px;
   & .title {
     color: $text-night-primary;
-    font-family: 'Golos Text', sans-serif;
+    font-family: "Golos Text", sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 700;
@@ -63,7 +74,7 @@
     height: 87px;
     flex-shrink: 0;
     border-radius: 10px;
-    background: #19191e;
+    background: #242429;
     & img {
       position: absolute;
       right: -3px;
@@ -79,7 +90,7 @@
     height: 87px;
     flex-shrink: 0;
     border-radius: 10px;
-    background: #19191e;
+    background: #242429;
     & img {
       position: absolute;
       right: -3px;
@@ -95,7 +106,7 @@
     height: 87px;
     flex-shrink: 0;
     border-radius: 10px;
-    background: #19191e;
+    background: #242429;
     & img {
       position: absolute;
       right: -3px;
@@ -111,7 +122,7 @@
     height: 87px;
     flex-shrink: 0;
     border-radius: 10px;
-    background: #19191e;
+    background: #242429;
     & img {
       position: absolute;
       right: -3px;

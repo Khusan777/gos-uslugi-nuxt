@@ -1,5 +1,5 @@
 <template>
-  <HeaderGosUslugi isBackground right left title="Штрафы"></HeaderGosUslugi>
+  <HeaderGosUslugi is-background right left title="Штрафы" />
   <div class="help_screen_container">
     <div class="help_screen">
       <div>
@@ -11,33 +11,33 @@
       </div>
     </div>
     <div v-for="item in items" :key="item">
-      <ToggleListItem :item="item"></ToggleListItem>
+      <ToggleListItem :item="item" />
     </div>
   </div>
 </template>
 
 <script setup>
-import HeaderGosUslugi from '@/components/ui/HeaderGosUslugi.vue'
-import ToggleListItem from '@/components/ui/ToggleListItem.vue'
+import HeaderGosUslugi from "@/components/ui/HeaderGosUslugi.vue";
+import ToggleListItem from "@/components/ui/ToggleListItem.vue";
 
 const items = reactive([
   {
-    text: 'В течении какого срока можно оплатить штраф в размере 50% от суммы наложенного штрафа?',
-    desc: 'Lorem kdndkvn mdlvdmvldvml mldvmdlv,dlv,d l,v;dv,dlv, dcdvdvd ijigbjtgvdkovd fvmodvmfovfmk fovjdofjm okvdokfovf dkvdvkd'
+    text: "В течении какого срока можно оплатить штраф в размере 50% от суммы наложенного штрафа?",
+    desc: "Lorem kdndkvn mdlvdmvldvml mldvmdlv,dlv,d l,v;dv,dlv, dcdvdvd ijigbjtgvdkovd fvmodvmfovfmk fovjdofjm okvdokfovf dkvdvkd",
   },
   {
-    text: 'В течении какого срока можно оплатить штраф в размере 50% от суммы наложенного штрафа?',
-    desc: 'Lorem kdndkvn mdlvdmvldvml mldvmdlv,dlv,d l,v;dv,dlv, dcdvdvd ijigbjtgvdkovd fvmodvmfovfmk fovjdofjm okvdokfovf dkvdvkd'
+    text: "В течении какого срока можно оплатить штраф в размере 50% от суммы наложенного штрафа?",
+    desc: "Lorem kdndkvn mdlvdmvldvml mldvmdlv,dlv,d l,v;dv,dlv, dcdvdvd ijigbjtgvdkovd fvmodvmfovfmk fovjdofjm okvdokfovf dkvdvkd",
   },
   {
-    text: 'В течении какого срока можно оплатить штраф в размере 50% от суммы наложенного штрафа?',
-    desc: 'Lorem kdndkvn mdlvdmvldvml mldvmdlv,dlv,d l,v;dv,dlv, dcdvdvd ijigbjtgvdkovd fvmodvmfovfmk fovjdofjm okvdokfovf dkvdvkd'
-  }
-])
+    text: "В течении какого срока можно оплатить штраф в размере 50% от суммы наложенного штрафа?",
+    desc: "Lorem kdndkvn mdlvdmvldvml mldvmdlv,dlv,d l,v;dv,dlv, dcdvdvd ijigbjtgvdkovd fvmodvmfovfmk fovjdofjm okvdokfovf dkvdvkd",
+  },
+]);
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/global';
+@import "@/assets/styles/global";
 
 .help_screen_container {
   overflow-x: hidden;
@@ -56,7 +56,7 @@ const items = reactive([
     }
     & .title {
       color: $text-night-primary;
-      font-family: 'Golos Text', sans-serif;
+      font-family: "Golos Text", sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
@@ -65,7 +65,7 @@ const items = reactive([
     }
     & .subtitle {
       color: $gray-light;
-      font-family: 'Golos Text', sans-serif;
+      font-family: "Golos Text", sans-serif;
       font-size: 12px;
       font-style: normal;
       font-weight: 400;
